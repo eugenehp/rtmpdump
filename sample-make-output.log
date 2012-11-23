@@ -1,0 +1,186 @@
+### Mac OS X 10.8.2
+
+gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o rtmp.o rtmp.c
+In file included from handshake.h:86,
+                 from rtmp.c:150:
+dh.h: In function ‘isValidPublicKey’:
+dh.h:161: warning: ‘BN_new’ is deprecated (declared at /usr/include/openssl/bn.h:417)
+dh.h:165: warning: ‘BN_set_word’ is deprecated (declared at /usr/include/openssl/bn.h:464)
+dh.h:166: warning: ‘BN_cmp’ is deprecated (declared at /usr/include/openssl/bn.h:467)
+dh.h:174: warning: ‘BN_copy’ is deprecated (declared at /usr/include/openssl/bn.h:420)
+dh.h:175: warning: ‘BN_sub_word’ is deprecated (declared at /usr/include/openssl/bn.h:463)
+dh.h:176: warning: ‘BN_cmp’ is deprecated (declared at /usr/include/openssl/bn.h:467)
+dh.h:192: warning: ‘BN_CTX_new’ is deprecated (declared at /usr/include/openssl/bn.h:403)
+dh.h:192: warning: ‘BN_mod_exp’ is deprecated (declared at /usr/include/openssl/bn.h:475)
+dh.h:192: warning: ‘BN_CTX_free’ is deprecated (declared at /usr/include/openssl/bn.h:407)
+dh.h:194: warning: ‘BN_cmp’ is deprecated (declared at /usr/include/openssl/bn.h:467)
+dh.h:194: warning: ‘BN_value_one’ is deprecated (declared at /usr/include/openssl/bn.h:401)
+dh.h:201: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+dh.h: In function ‘DHInit’:
+dh.h:209: warning: ‘DH_new’ is deprecated (declared at /usr/include/openssl/dh.h:184)
+dh.h:214: warning: ‘BN_new’ is deprecated (declared at /usr/include/openssl/bn.h:417)
+dh.h:219: warning: ‘BN_hex2bn’ is deprecated (declared at /usr/include/openssl/bn.h:507)
+dh.h:225: warning: ‘BN_set_word’ is deprecated (declared at /usr/include/openssl/bn.h:464)
+dh.h:232: warning: ‘DH_free’ is deprecated (declared at /usr/include/openssl/dh.h:185)
+dh.h: In function ‘DHGenerateKey’:
+dh.h:248: warning: ‘DH_generate_key’ is deprecated (declared at /usr/include/openssl/dh.h:204)
+dh.h:251: warning: ‘BN_hex2bn’ is deprecated (declared at /usr/include/openssl/bn.h:507)
+dh.h:257: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+dh.h:258: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+dh.h:262: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+dh.h: In function ‘DHGetPublicKey’:
+dh.h:278: warning: ‘BN_num_bits’ is deprecated (declared at /usr/include/openssl/bn.h:415)
+dh.h:283: warning: ‘BN_bn2bin’ is deprecated (declared at /usr/include/openssl/bn.h:423)
+dh.h: In function ‘DHComputeSharedSecretKey’:
+dh.h:318: warning: ‘BN_bin2bn’ is deprecated (declared at /usr/include/openssl/bn.h:422)
+dh.h:322: warning: ‘BN_hex2bn’ is deprecated (declared at /usr/include/openssl/bn.h:507)
+dh.h:326: warning: ‘DH_compute_key’ is deprecated (declared at /usr/include/openssl/dh.h:205)
+dh.h:330: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+dh.h:331: warning: ‘BN_free’ is deprecated (declared at /usr/include/openssl/bn.h:468)
+In file included from rtmp.c:150:
+handshake.h: In function ‘InitRC4Encryption’:
+handshake.h:125: warning: ‘HMAC_CTX_init’ is deprecated (declared at /usr/include/openssl/hmac.h:90)
+handshake.h:125: warning: ‘HMAC_Init_ex’ is deprecated (declared at /usr/include/openssl/hmac.h:98)
+handshake.h:125: warning: ‘EVP_sha256’ is deprecated (declared at /usr/include/openssl/evp.h:673)
+handshake.h:126: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+handshake.h:127: warning: ‘HMAC_Final’ is deprecated (declared at /usr/include/openssl/hmac.h:100)
+handshake.h:127: warning: ‘HMAC_CTX_cleanup’ is deprecated (declared at /usr/include/openssl/hmac.h:91)
+handshake.h:132: warning: ‘RC4_set_key’ is deprecated (declared at /usr/include/openssl/rc4.h:84)
+handshake.h:134: warning: ‘HMAC_CTX_init’ is deprecated (declared at /usr/include/openssl/hmac.h:90)
+handshake.h:134: warning: ‘HMAC_Init_ex’ is deprecated (declared at /usr/include/openssl/hmac.h:98)
+handshake.h:134: warning: ‘EVP_sha256’ is deprecated (declared at /usr/include/openssl/evp.h:673)
+handshake.h:135: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+handshake.h:136: warning: ‘HMAC_Final’ is deprecated (declared at /usr/include/openssl/hmac.h:100)
+handshake.h:136: warning: ‘HMAC_CTX_cleanup’ is deprecated (declared at /usr/include/openssl/hmac.h:91)
+handshake.h:141: warning: ‘RC4_set_key’ is deprecated (declared at /usr/include/openssl/rc4.h:84)
+handshake.h: In function ‘HMACsha256’:
+handshake.h:271: warning: ‘HMAC_CTX_init’ is deprecated (declared at /usr/include/openssl/hmac.h:90)
+handshake.h:271: warning: ‘HMAC_Init_ex’ is deprecated (declared at /usr/include/openssl/hmac.h:98)
+handshake.h:271: warning: ‘EVP_sha256’ is deprecated (declared at /usr/include/openssl/evp.h:673)
+handshake.h:272: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+handshake.h:273: warning: ‘HMAC_Final’ is deprecated (declared at /usr/include/openssl/hmac.h:100)
+handshake.h:273: warning: ‘HMAC_CTX_cleanup’ is deprecated (declared at /usr/include/openssl/hmac.h:91)
+handshake.h: In function ‘HandShake’:
+handshake.h:1049: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+handshake.h:1054: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+handshake.h: In function ‘SHandShake’:
+handshake.h:1399: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+handshake.h:1404: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+rtmp.c: In function ‘RTMP_TLS_Init’:
+rtmp.c:243: warning: ‘SSL_load_error_strings’ is deprecated (declared at /usr/include/openssl/ssl.h:1416)
+rtmp.c:244: warning: ‘SSL_library_init’ is deprecated (declared at /usr/include/openssl/ssl.h:1553)
+rtmp.c:245: warning: ‘OpenSSL_add_all_digests’ is deprecated (declared at /usr/include/openssl/evp.h:840)
+rtmp.c:246: warning: ‘SSL_CTX_new’ is deprecated (declared at /usr/include/openssl/ssl.h:1346)
+rtmp.c:246: warning: ‘SSLv23_method’ is deprecated (declared at /usr/include/openssl/ssl.h:1515)
+rtmp.c:247: warning: ‘SSL_CTX_ctrl’ is deprecated (declared at /usr/include/openssl/ssl.h:1498)
+rtmp.c:248: warning: ‘SSL_CTX_set_default_verify_paths’ is deprecated (declared at /usr/include/openssl/ssl.h:1570)
+rtmp.c: In function ‘RTMP_TLS_AllocServerContext’:
+rtmp.c:281: warning: ‘SSL_CTX_new’ is deprecated (declared at /usr/include/openssl/ssl.h:1346)
+rtmp.c:281: warning: ‘SSLv23_server_method’ is deprecated (declared at /usr/include/openssl/ssl.h:1516)
+rtmp.c:282: warning: ‘SSL_CTX_use_certificate_chain_file’ is deprecated (declared at /usr/include/openssl/ssl.h:1403)
+rtmp.c:283: warning: ‘SSL_CTX_free’ is deprecated (declared at /usr/include/openssl/ssl.h:1347)
+rtmp.c:286: warning: ‘SSL_CTX_use_PrivateKey_file’ is deprecated (declared at /usr/include/openssl/ssl.h:1401)
+rtmp.c:287: warning: ‘SSL_CTX_free’ is deprecated (declared at /usr/include/openssl/ssl.h:1347)
+rtmp.c: In function ‘RTMP_TLS_FreeServerContext’:
+rtmp.c:306: warning: ‘SSL_CTX_free’ is deprecated (declared at /usr/include/openssl/ssl.h:1347)
+rtmp.c: In function ‘RTMP_TLS_Accept’:
+rtmp.c:958: warning: ‘SSL_new’ is deprecated (declared at /usr/include/openssl/ssl.h:1481)
+rtmp.c:959: warning: ‘SSL_set_fd’ is deprecated (declared at /usr/include/openssl/ssl.h:1370)
+rtmp.c:960: warning: ‘SSL_accept’ is deprecated (declared at /usr/include/openssl/ssl.h:1491)
+rtmp.c: In function ‘RTMP_Connect1’:
+rtmp.c:977: warning: ‘SSL_new’ is deprecated (declared at /usr/include/openssl/ssl.h:1481)
+rtmp.c:978: warning: ‘SSL_set_fd’ is deprecated (declared at /usr/include/openssl/ssl.h:1370)
+rtmp.c:979: warning: ‘SSL_connect’ is deprecated (declared at /usr/include/openssl/ssl.h:1492)
+rtmp.c: In function ‘ReadN’:
+rtmp.c:1485: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+rtmp.c: In function ‘WriteN’:
+rtmp.c:1511: warning: ‘RC4’ is deprecated (declared at /usr/include/openssl/rc4.h:86)
+rtmp.c: In function ‘b64enc’:
+rtmp.c:2460: warning: ‘BIO_new’ is deprecated (declared at /usr/include/openssl/bio.h:581)
+rtmp.c:2460: warning: ‘BIO_f_base64’ is deprecated (declared at /usr/include/openssl/evp.h:647)
+rtmp.c:2461: warning: ‘BIO_new’ is deprecated (declared at /usr/include/openssl/bio.h:581)
+rtmp.c:2461: warning: ‘BIO_s_mem’ is deprecated (declared at /usr/include/openssl/bio.h:616)
+rtmp.c:2462: warning: ‘BIO_push’ is deprecated (declared at /usr/include/openssl/bio.h:594)
+rtmp.c:2463: warning: ‘BIO_write’ is deprecated (declared at /usr/include/openssl/bio.h:587)
+rtmp.c:2464: warning: ‘BIO_ctrl’ is deprecated (declared at /usr/include/openssl/bio.h:590)
+rtmp.c:2466: warning: ‘BIO_ctrl’ is deprecated (declared at /usr/include/openssl/bio.h:590)
+rtmp.c:2475: warning: ‘BIO_free_all’ is deprecated (declared at /usr/include/openssl/bio.h:596)
+rtmp.c: In function ‘PublisherAuth’:
+rtmp.c:2589: warning: ‘MD5_Init’ is deprecated (declared at /usr/include/openssl/md5.h:113)
+rtmp.c:2590: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2591: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2592: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2593: warning: ‘MD5_Final’ is deprecated (declared at /usr/include/openssl/md5.h:115)
+rtmp.c:2607: warning: ‘MD5_Init’ is deprecated (declared at /usr/include/openssl/md5.h:113)
+rtmp.c:2608: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2611: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2613: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2614: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2615: warning: ‘MD5_Final’ is deprecated (declared at /usr/include/openssl/md5.h:115)
+rtmp.c:2763: warning: ‘MD5_Init’ is deprecated (declared at /usr/include/openssl/md5.h:113)
+rtmp.c:2764: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2765: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2766: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2767: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2768: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2769: warning: ‘MD5_Final’ is deprecated (declared at /usr/include/openssl/md5.h:115)
+rtmp.c:2782: warning: ‘MD5_Init’ is deprecated (declared at /usr/include/openssl/md5.h:113)
+rtmp.c:2783: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2784: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2785: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2786: warning: ‘MD5_Final’ is deprecated (declared at /usr/include/openssl/md5.h:115)
+rtmp.c:2793: warning: ‘MD5_Init’ is deprecated (declared at /usr/include/openssl/md5.h:113)
+rtmp.c:2794: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2795: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2796: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2797: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2798: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2799: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2800: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2801: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2802: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2803: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2804: warning: ‘MD5_Update’ is deprecated (declared at /usr/include/openssl/md5.h:114)
+rtmp.c:2805: warning: ‘MD5_Final’ is deprecated (declared at /usr/include/openssl/md5.h:115)
+rtmp.c: In function ‘RTMP_Close’:
+rtmp.c:4227: warning: ‘DH_free’ is deprecated (declared at /usr/include/openssl/dh.h:185)
+rtmp.c: In function ‘RTMPSockBuf_Fill’:
+rtmp.c:4260: warning: ‘SSL_read’ is deprecated (declared at /usr/include/openssl/ssl.h:1493)
+rtmp.c: In function ‘RTMPSockBuf_Send’:
+rtmp.c:4303: warning: ‘SSL_write’ is deprecated (declared at /usr/include/openssl/ssl.h:1495)
+rtmp.c: In function ‘RTMPSockBuf_Close’:
+rtmp.c:4319: warning: ‘SSL_shutdown’ is deprecated (declared at /usr/include/openssl/ssl.h:1532)
+rtmp.c:4320: warning: ‘SSL_free’ is deprecated (declared at /usr/include/openssl/ssl.h:1490)
+gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o log.o log.c
+gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o amf.o amf.c
+In file included from amf.c:33:
+bytes.h:74:2: warning: #warning "Float word order not defined, assuming the same as byte order!"
+gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o hashswf.o hashswf.c
+hashswf.c: In function ‘HTTP_get’:
+hashswf.c:164: warning: ‘SSL_new’ is deprecated (declared at /usr/include/openssl/ssl.h:1481)
+hashswf.c:165: warning: ‘SSL_set_fd’ is deprecated (declared at /usr/include/openssl/ssl.h:1370)
+hashswf.c:166: warning: ‘SSL_connect’ is deprecated (declared at /usr/include/openssl/ssl.h:1492)
+hashswf.c: In function ‘swfcrunch’:
+hashswf.c:314: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+hashswf.c:332: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+hashswf.c:339: warning: ‘HMAC_Update’ is deprecated (declared at /usr/include/openssl/hmac.h:99)
+hashswf.c: In function ‘RTMP_HashSWF’:
+hashswf.c:585: warning: ‘HMAC_CTX_init’ is deprecated (declared at /usr/include/openssl/hmac.h:90)
+hashswf.c:585: warning: ‘HMAC_Init_ex’ is deprecated (declared at /usr/include/openssl/hmac.h:98)
+hashswf.c:585: warning: ‘EVP_sha256’ is deprecated (declared at /usr/include/openssl/evp.h:673)
+hashswf.c:640: warning: ‘HMAC_Final’ is deprecated (declared at /usr/include/openssl/hmac.h:100)
+hashswf.c:651: warning: ‘HMAC_CTX_cleanup’ is deprecated (declared at /usr/include/openssl/hmac.h:91)
+gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o parseurl.o parseurl.c
+ar rs librtmp.a rtmp.o log.o amf.o hashswf.o parseurl.o
+ar: creating archive librtmp.a
+gcc -arch x86_64 -shared  -o librtmp.so.0 rtmp.o log.o amf.o hashswf.o parseurl.o  -lssl -lcrypto -lz 
+ln -sf librtmp.so.0 librtmp.so
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpdump.o rtmpdump.c
+gcc -Wall  -o rtmpdump rtmpdump.o -Llibrtmp -lrtmp -lssl -lcrypto -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpgw.o rtmpgw.c
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o thread.o thread.c
+gcc -Wall  -o rtmpgw rtmpgw.o thread.o -lpthread -Llibrtmp -lrtmp -lssl -lcrypto -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpsrv.o rtmpsrv.c
+gcc -Wall  -o rtmpsrv rtmpsrv.o thread.o -lpthread -Llibrtmp -lrtmp -lssl -lcrypto -lz  
+gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpsuck.o rtmpsuck.c
+gcc -Wall  -o rtmpsuck rtmpsuck.o thread.o -lpthread -Llibrtmp -lrtmp -lssl -lcrypto -lz  
