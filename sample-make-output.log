@@ -1,5 +1,5 @@
-### Mac OS X 10.8.2
-
+rm -f *.o rtmpdump rtmpgw rtmpsrv rtmpsuck
+rm -f *.o *.a *.so *.0.so librtmp.pc
 gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o rtmp.o rtmp.c
 In file included from handshake.h:86,
                  from rtmp.c:150:
@@ -173,8 +173,8 @@ hashswf.c:651: warning: ‘HMAC_CTX_cleanup’ is deprecated (declared at /usr/i
 gcc -arch x86_64 -Wall   -DRTMPDUMP_VERSION=\"v2.4\" -DUSE_OPENSSL  -O2 -fPIC   -c -o parseurl.o parseurl.c
 ar rs librtmp.a rtmp.o log.o amf.o hashswf.o parseurl.o
 ar: creating archive librtmp.a
-gcc -arch x86_64 -shared  -o librtmp.so.0 rtmp.o log.o amf.o hashswf.o parseurl.o  -lssl -lcrypto -lz 
-ln -sf librtmp.so.0 librtmp.so
+gcc -arch x86_64 -dynamiclib -twolevel_namespace -undefined dynamic_lookup -fno-common -headerpad_max_install_names -install_name /usr/local/lib/librtmp.dylib.0  -o librtmp.dylib.0 rtmp.o log.o amf.o hashswf.o parseurl.o  -lssl -lcrypto -lz 
+ln -sf librtmp.dylib.0 librtmp.dylib
 gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpdump.o rtmpdump.c
 gcc -Wall  -o rtmpdump rtmpdump.o -Llibrtmp -lrtmp -lssl -lcrypto -lz  
 gcc -Wall   -DRTMPDUMP_VERSION=\"v2.4\"   -O2   -c -o rtmpgw.o rtmpgw.c

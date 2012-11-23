@@ -37,8 +37,8 @@ CRYPTO_REQ=$(REQ_$(CRYPTO))
 CRYPTO_DEF=$(DEF_$(CRYPTO))
 
 SO_VERSION=0
-SOX_darwin=o
-SOX_posix=dylib
+SOX_posix=so
+SOX_darwin=dylib
 SOX_mingw=dll
 SOX=$(SOX_$(SYS))
 SO_darwin=.$(SOX).$(SO_VERSION)
@@ -52,8 +52,8 @@ SODIR_mingw=$(BINDIR)
 SODIR=$(SODIR_$(SYS))
 
 #SO_LDFLAGS_posix=-shared -Wl,-soname,$@
-SO_LDFLAGS_darwin=-shared
-SO_LDFLAGS_posix=-dynamiclib -twolevel_namespace -undefined dynamic_lookup \
+SO_LDFLAGS_posix=-shared
+SO_LDFLAGS_darwin=-dynamiclib -twolevel_namespace -undefined dynamic_lookup \
 	-fno-common -headerpad_max_install_names -install_name $(libdir)/$@
 SO_LDFLAGS_mingw=-shared -Wl,--out-implib,librtmp.dll.a
 SO_LDFLAGS=$(SO_LDFLAGS_$(SYS))
