@@ -11,7 +11,7 @@ INCDIR=$(DESTDIR)$(incdir)
 LIBDIR=$(DESTDIR)$(libdir)
 MANDIR=$(DESTDIR)$(mandir)
 
-CC=$(CROSS_COMPILE)gcc
+CC=$(CROSS_COMPILE)gcc -arch x86_64
 LD=$(CROSS_COMPILE)ld
 AR=$(CROSS_COMPILE)ar
 
